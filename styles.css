@@ -4,14 +4,14 @@
 --btn-padding: 0.6rem 2rem;
 --search-padding: 0.6rem 1rem;
 --card-padding: 1rem;
---color-white: hsl(252, 30%, 100%);
---color-gray: hsl(252, 15%, 65%);
---color-light:hsl(252, 30%, 90%);
---color-dark: hsl(252, 30%, 17%);
---color-primary: hsl(252, 75%, 60%);
---color-success: hsl(120, 95%, 60%);
+--color-white: hsl(0, 8%, 10%);
+--color-gray: hsl(207, 84%, 48%);
+--color-light:hsla(171, 6%, 54%, 0.336);
+--color-dark: hsl(240, 3%, 87%);
+--color-primary: linear-gradient(to right,rgba(11, 255, 105, 0.747),rgba(15, 158, 253, 0.815));
+--color-success: hsl(145, 95%, 61%);
 --color-danger: hsl(0, 95%, 65%);
---color-black: hsl(252, 30%, 10%);
+--color-black: hsla(165, 100%, 50%, 0.836);
 --sticky-top-left: 5.4rem;
 --sticky-top-right: -18rem;
 }
@@ -36,6 +36,7 @@ body{
 .container{
     width: 80%;
     margin: 0 auto;
+
 }
 
 .profile-pic{
@@ -104,7 +105,8 @@ nav .container{
 }
 
 nav .search-bar input[type="search"]::placeholder{
-    color: var(--color-gray);
+    color: none;
+    
 }
 
 nav .create{
@@ -162,7 +164,7 @@ main .container .left .profle{
 
 .left .sidebar i{
     font-size: 1.4rem;
-    color: var(--color-gray);
+    color: var(--color-black);
     margin-left: 2rem;
     position: relative;
 }
@@ -291,27 +293,20 @@ main .container .left .profle{
 }
 
 .middle .stories .story:nth-child(1){
-    background: url('images/story-1.jpg');
+    background: url('images/story-1.jpg')
     no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2){
-    background: url('images/story-2.jpg');
+    background: url('images/story-2.jpg')
+    no-repeat center center/cover;
+}
+
+.middle .stories .story:nth-child(4){
+    background: url('images/story-4.jpg')
     no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(3){
-    background: url('images/story-3.jpg');
-    no-repeat center center/cover;
-}
-.middle .stories .story:nth-child(4){
-    background: url('images/story-4.jpg');
-    no-repeat center center/cover;
-}
-.middle .stories .story:nth-child(5){
-    background: url('images/story-5.jpg');
-    no-repeat center center/cover;
-}
-.middle .stories .story:nth-child(6){
-    background: url('images/story-6.jpg');
+    background: url('images/story-3.jpg')
     no-repeat center center/cover;
 }
 
@@ -319,7 +314,7 @@ main .container .left .profle{
     width: 2rem;
     height: 2rem;
     align-self: start;
-    border: 3px solid var(--color-primary) ;
+    border: 3px solid var(--color-gray) ;
 }
 
 
