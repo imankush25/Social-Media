@@ -1,2 +1,2 @@
-# Social-Media
-Made using HTML , CSS ,JavaScript
+# social-media-website
+A Responsive Social Media Website With Theme Customization Using HTML CSS &amp; JavaScript
